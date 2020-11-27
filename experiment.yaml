@@ -4,7 +4,9 @@ Dataset:
 
 Training:
   snapshot_dir: "snapshots"
-  epochs: 10
+  log_dir: "logs"
+  snapshot_selection_scheme: "val_loss"
+  epochs: 60
   batch_size: 16
   num_workers: 10
   gpus: 1

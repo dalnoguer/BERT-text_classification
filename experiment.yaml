@@ -1,0 +1,20 @@
+Dataset:
+  data_dir: "/home/dal/datasets/imdb/preprocessed"
+  num_classes: 2
+
+Training:
+  snapshot_dir: "snapshots"
+  epochs: 10
+  batch_size: 16
+  num_workers: 10
+  gpus: 1
+  optimizer:
+    lr: 2e-5
+    eps: 1e-8
+  scheduler:
+    max_lr: 2e-5
+    total_steps: 2000
+
+Model:
+  dropout: 0.2
+  attention_dropout: 0.2
